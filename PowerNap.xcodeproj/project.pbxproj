@@ -13,6 +13,7 @@
 		DC28F1F62281E4480011AC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC28F1F52281E4480011AC50 /* Assets.xcassets */; };
 		DC28F1F92281E4480011AC50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC28F1F72281E4480011AC50 /* LaunchScreen.storyboard */; };
 		DC28F2042281E4480011AC50 /* PowerNapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC28F2032281E4480011AC50 /* PowerNapTests.swift */; };
+		DC28F20F2281E6170011AC50 /* MyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC28F20E2281E6170011AC50 /* MyTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		DC28F1FF2281E4480011AC50 /* PowerNapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerNapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC28F2032281E4480011AC50 /* PowerNapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerNapTests.swift; sourceTree = "<group>"; };
 		DC28F2052281E4480011AC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC28F20E2281E6170011AC50 /* MyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +79,10 @@
 		DC28F1ED2281E4460011AC50 /* PowerNap */ = {
 			isa = PBXGroup;
 			children = (
-				DC28F1EE2281E4460011AC50 /* AppDelegate.swift */,
+				DC28F2102281E6210011AC50 /* Resources */,
 				DC28F1F02281E4460011AC50 /* ViewController.swift */,
 				DC28F1F22281E4460011AC50 /* Main.storyboard */,
-				DC28F1F52281E4480011AC50 /* Assets.xcassets */,
-				DC28F1F72281E4480011AC50 /* LaunchScreen.storyboard */,
-				DC28F1FA2281E4480011AC50 /* Info.plist */,
+				DC28F20E2281E6170011AC50 /* MyTimer.swift */,
 			);
 			path = PowerNap;
 			sourceTree = "<group>";
@@ -94,6 +94,17 @@
 				DC28F2052281E4480011AC50 /* Info.plist */,
 			);
 			path = PowerNapTests;
+			sourceTree = "<group>";
+		};
+		DC28F2102281E6210011AC50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC28F1EE2281E4460011AC50 /* AppDelegate.swift */,
+				DC28F1F52281E4480011AC50 /* Assets.xcassets */,
+				DC28F1F72281E4480011AC50 /* LaunchScreen.storyboard */,
+				DC28F1FA2281E4480011AC50 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC28F1F12281E4460011AC50 /* ViewController.swift in Sources */,
+				DC28F20F2281E6170011AC50 /* MyTimer.swift in Sources */,
 				DC28F1EF2281E4460011AC50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DT6NQCY8FM;
-				INFOPLIST_FILE = PowerNap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PowerNap/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +392,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DT6NQCY8FM;
-				INFOPLIST_FILE = PowerNap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PowerNap/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
