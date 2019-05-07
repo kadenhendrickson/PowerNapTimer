@@ -8,10 +8,20 @@
 
 import Foundation
 
+//1) Write the protocol
+protocol MyTimerDelegate: class {
+    func timerSecondTicked()
+    func timerCompleted()
+    func timerStopped()
+}
+
 class MyTimer: NSObject {
     
     var timeRemaining: TimeInterval?
     var timer: Timer?
+    
+    //2) add weak var delegate
+    weak var delegate: MyTimerDelegate?
     
     var isOn: Bool {
        return timeRemaining != nil
@@ -28,10 +38,12 @@ class MyTimer: NSObject {
         guard let timeRemaining = timeRemaining else { return }
         if timeRemaining > 0 {
             self.timeRemaining = timeRemaining - 1
+            delegate?.timerSecondTicked()
             print(timeRemaining)
         } else {
             timer?.invalidate()
             self.timeRemaining = nil
+            delegate?.timerCompleted()
         }
     }
     
@@ -50,6 +62,8 @@ class MyTimer: NSObject {
     func stopTimer() {
         if isOn {
             timeRemaining = nil
+            timer?.invalidate()
+            delegate?.timerStopped()
         }
     }
     

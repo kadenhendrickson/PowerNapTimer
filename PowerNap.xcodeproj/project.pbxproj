@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC28F1EF2281E4460011AC50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC28F1EE2281E4460011AC50 /* AppDelegate.swift */; };
-		DC28F1F12281E4460011AC50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC28F1F02281E4460011AC50 /* ViewController.swift */; };
+		DC28F1F12281E4460011AC50 /* PowerNapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC28F1F02281E4460011AC50 /* PowerNapViewController.swift */; };
 		DC28F1F42281E4460011AC50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC28F1F22281E4460011AC50 /* Main.storyboard */; };
 		DC28F1F62281E4480011AC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC28F1F52281E4480011AC50 /* Assets.xcassets */; };
 		DC28F1F92281E4480011AC50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC28F1F72281E4480011AC50 /* LaunchScreen.storyboard */; };
@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		DC28F1EB2281E4460011AC50 /* PowerNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC28F1EE2281E4460011AC50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC28F1F02281E4460011AC50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC28F1F02281E4460011AC50 /* PowerNapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerNapViewController.swift; sourceTree = "<group>"; };
 		DC28F1F32281E4460011AC50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC28F1F52281E4480011AC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC28F1F82281E4480011AC50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				DC28F2102281E6210011AC50 /* Resources */,
-				DC28F1F02281E4460011AC50 /* ViewController.swift */,
+				DC28F1F02281E4460011AC50 /* PowerNapViewController.swift */,
 				DC28F1F22281E4460011AC50 /* Main.storyboard */,
 				DC28F20E2281E6170011AC50 /* MyTimer.swift */,
 			);
@@ -208,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC28F1F12281E4460011AC50 /* ViewController.swift in Sources */,
+				DC28F1F12281E4460011AC50 /* PowerNapViewController.swift in Sources */,
 				DC28F20F2281E6170011AC50 /* MyTimer.swift in Sources */,
 				DC28F1EF2281E4460011AC50 /* AppDelegate.swift in Sources */,
 			);
